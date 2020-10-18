@@ -1,3 +1,5 @@
+# -*- fill-column: 80; -*-
+
 # Copyright (C) 2012
 # See LICENSE.txt for details.
 
@@ -17,12 +19,10 @@ for most Python projects.
 from __future__ import unicode_literals
 
 import argparse
-import sys
 import re
-
+import sys
 from io import StringIO
 from uuid import uuid4
-
 
 __all__ = [
     "wrapPythonDocstring"

@@ -39,6 +39,11 @@ single space is used."
   :type 'boolean
   :group 'python-docstring)
 
+(defcustom python-docstring-fill-column fill-column
+  "fill-column value for python-docstring."
+  :type 'integer
+  :group 'python-docstring)
+
 (defvar python-docstring-script
   (concat (if load-file-name
               (file-name-directory load-file-name)
@@ -89,7 +94,7 @@ single space is used."
                             (shell-quote-argument python-docstring-script)
                             orig-offset
                             indent-count
-                            fill-column
+                            python-docstring-fill-column
                             )
                            :replace t)
                           (goto-char string-start)

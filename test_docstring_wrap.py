@@ -1,3 +1,5 @@
+# -*- fill-column: 80; -*-
+
 # Copyright (C) 2012
 # See LICENSE.txt for details.
 
